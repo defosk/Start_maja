@@ -13,7 +13,7 @@ RUN yum --disableplugin=fastestmirror -y update && yum clean all
 RUN yum --disableplugin=fastestmirror -y install gd libxslt libxml2 git wget
 
 RUN mkdir /usr/lbzip2 && cd /usr/lbzip2
-RUN wget http://dl.fedoraproject.org/pub/epel/7/x86_64/l/lbzip2-2.5-1.el7.x86_64.rpm
+RUN wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/l/lbzip2-2.5-1.el7.x86_64.rpm
 RUN rpm -Uvh lbzip2-2.5-1.el7.x86_64.rpm
 
 RUN mkdir /usr/local/maja && cd /usr/local/maja
